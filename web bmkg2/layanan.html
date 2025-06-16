@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>BMKG Maritim</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styleberanda.css" />
+  <!-- Tambahkan di <head> Anda -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Leaflet CSS & JS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<!-- Navbar -->
+ <header class="header">
+  <div class="header-content">
+    <img class="logo" src="img/logo bmkg.jpg" alt="Logo BMKG Maritim Teluk Bayur" />
+    <h1 class="site-title">BMKG Maritim Teluk Bayur</h1>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="beranda.html" class="nav-link">Beranda</a></li>
+        <li><a href="prakiraan.html" class="nav-link">Prakiraan</a></li>
+        <li><a href="layanan.html" class="nav-link">Layanan</a></li>
+        <li><a href="arsipprakiraan.html" class="nav-link">Arsip Prakiraan</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Section LAYANAN -->
+<section class="relative bg-gradient-to-br from-blue-100 to-green-100 min-h-[60vh] flex flex-col justify-center items-center text-center px-6 py-20 overflow-hidden">
+  <div class="absolute inset-0 backdrop-blur-lg bg-white/30 rounded-xl z-0"></div>
+  <div class="z-10">
+    <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800 drop-shadow-lg mb-4">LAYANAN</h2>
+    <p class="text-xl text-gray-700 mb-6 font-medium">Stasiun Meteorologi Maritim Teluk Bayur - Padang</p>
+    <a href="#form-permohonan" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition">Buat Permohonan</a>
+  </div>
+</section>
+
+<!-- Section MAKLUMAT PELAYANAN -->
+<section class="bg-white py-20 px-8 md:px-20 text-center">
+  <div class="max-w-3xl mx-auto">
+    <h3 class="text-3xl font-bold text-blue-800 mb-6">MAKLUMAT PELAYANAN</h3>
+    <p class="text-lg text-gray-700 leading-relaxed">
+      Kami menyatakan siap melayani masyarakat untuk memperoleh informasi Meteorologi, Klimatologi dan Geofisika sesuai dengan standar pelayanan yang telah ditetapkan. Apabila tidak menepati janji ini, kami siap menerima sanksi sesuai dengan peraturan perundang-undangan yang berlaku.
+    </p>
+  </div>
+</section>
+
+<!-- Section LAYANAN DETAIL -->
+<section class="bg-gradient-to-br from-blue-50 to-white py-16 px-6 md:px-20">
+  <div class="text-center mb-12">
+    <h3 class="text-3xl font-extrabold text-gray-800">JENIS LAYANAN</h3>
+    <p class="text-gray-600 text-lg mt-2">Berikut adalah layanan yang kami sediakan untuk kebutuhan kelautan dan kemaritiman Anda.</p>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <!-- Card 1 -->
+    <div class="bg-white shadow-lg rounded-xl p-6 hover:scale-105 transform transition">
+      <img src="icons/clouds.png" alt="Prakiraan Cuaca" class="w-16 mx-auto mb-4">
+      <h4 class="text-xl font-bold text-blue-800 mb-2">Prakiraan Cuaca Maritim</h4>
+      <p class="text-gray-600">Informasi cuaca laut harian untuk kebutuhan pelayaran, perikanan, dan aktivitas maritim lainnya.</p>
+    </div>
+    <!-- Card 2 -->
+    <div class="bg-white shadow-lg rounded-xl p-6 hover:scale-105 transform transition">
+      <img src="icons/file.png" alt="Permohonan Data" class="w-16 mx-auto mb-4">
+      <h4 class="text-xl font-bold text-blue-800 mb-2">Permohonan Data</h4>
+      <p class="text-gray-600">Layanan permintaan data observasi meteorologi laut dan analisis iklim kelautan.</p>
+    </div>
+    <!-- Card 3 -->
+    <!-- Card 3: Informasi Meteorologi (Berbayar) -->
+<div class="bg-white shadow-lg rounded-xl p-6 hover:scale-105 transform transition text-center">
+  <img src="icons/claims.png" alt="Informasi Meteorologi Berbayar" class="w-20 mx-auto mb-4">
+  <h4 class="text-xl font-bold text-blue-800 mb-2">Informasi Meteorologi<br>(Berbayar)</h4>
+  <p class="text-gray-600">
+    Layanan Informasi Meteorologi Maritim yang dikenakan tarif Penerimaan Negara Bukan Pajak (PNBP).
+  </p>
+</div>
+
+  </div>
+</section>
+
+<section class="bg-white py-16 px-4 md:px-20" id="layanan-cuaca-maritim">
+  <div class="text-center mb-12">
+    <h2 class="text-3xl font-bold text-blue-800 mb-4">Layanan Prakiraan Cuaca Maritim</h2>
+    <p class="text-gray-600">Informasi cuaca harian & mingguan untuk keselamatan pelayaran dan aktivitas maritim lainnya.</p>
+  </div>
+  
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <!-- Kartu Layanan 1 -->
+    <div class="bg-sky-100 rounded-xl shadow-lg p-6 hover:-translate-y-1 transition">
+      <img src="img/cruise-removebg-preview.png" alt="Pelayaran" class="w-30 mb-4">
+      <h3 class="text-xl font-semibold text-blue-900">Cuaca Pelayaran</h3>
+      <p class="text-gray-700 text-sm mt-2">Prakiraan angin, hujan, visibilitas, dan arah gelombang untuk kapal laut.</p>
+    </div>
+
+    <!-- Kartu Layanan 2 -->
+    <div class="bg-blue-100 rounded-xl shadow-lg p-6 hover:-translate-y-1 transition">
+      <img src="img/harbour-removebg-preview.png" alt="Pelabuhan" class="w-30 mb-12">
+      <h3 class="text-xl font-semibold text-blue-900">Cuaca Pelabuhan</h3>
+      <p class="text-gray-700 text-sm mt-2">Kondisi cuaca di area pelabuhan penting untuk aktivitas bongkar muat.</p>
+    </div>
+
+    <!-- Kartu Layanan 3 -->
+    <div class="bg-sky-200 rounded-xl shadow-lg p-6 hover:-translate-y-1 transition">
+      <img src="img/wave-removebg-preview.png" alt="Gelombang Laut" class="w-30 mb-2">
+      <h3 class="text-xl font-semibold text-blue-900">Gelombang Laut</h3>
+      <p class="text-gray-700 text-sm mt-2">Pantauan tinggi dan arah gelombang laut harian berdasarkan wilayah perairan.</p>
+    </div>
+
+    <!-- Kartu Layanan 4 -->
+    <div class="bg-blue-200 rounded-xl shadow-lg p-6 hover:-translate-y-1 transition">
+      <img src="img/warning-removebg-preview.png" alt="Peringatan Dini" class="w-30 mb-4">
+      <h3 class="text-xl font-semibold text-blue-900">Peringatan Dini</h3>
+      <p class="text-gray-700 text-sm mt-2">Notifikasi cuaca ekstrem seperti badai, angin kencang, atau gelombang tinggi.</p>
+    </div>
+  </div>
+
+  <div class="text-center mt-10">
+    <a href="prakiraan.html" class="bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition">Lihat Prakiraan Cuaca Maritim</a>
+  </div>
+</section>
+
+
+<section class="bg-blue-50 py-12 px-4 md:px-20">
+  <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-xl p-8">
+    <h2 class="text-2xl md:text-3xl font-bold text-center text-blue-800 mb-6">
+      Formulir Permohonan Data<br>
+      <span class="text-base font-medium text-gray-600">Stasiun Meteorologi Maritim Teluk Bayur - Padang</span>
+    </h2>
+    <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- Nama dan Kontak -->
+      <div>
+        <label class="block font-semibold mb-1">Nama Pemohon <span class="text-red-500">*</span></label>
+        <input type="text" placeholder="Isi nama sesuai KTP" class="w-full border rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-300" required>
+      </div>
+      <div>
+        <label class="block font-semibold mb-1">Nomor Kontak <span class="text-red-500">*</span></label>
+        <input type="text" placeholder="Isi nomor yang dapat dihubungi" class="w-full border rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-300" required>
+      </div>
+
+      <!-- Email dan Asal -->
+      <div>
+        <label class="block font-semibold mb-1">Email Pemohon <span class="text-red-500">*</span></label>
+        <input type="email" placeholder="Isi alamat email aktif" class="w-full border rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-300" required>
+      </div>
+      <div>
+        <label class="block font-semibold mb-1">Asal Pemohon <span class="text-red-500">*</span></label>
+        <input type="text" placeholder="Contoh: PT. Jaya Abadi, UNP, dll" class="w-full border rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-300" required>
+      </div>
+
+      <!-- Tujuan dan Pengiriman -->
+      <div>
+        <label class="block font-semibold mb-1">Peruntukan Data dan Informasi <span class="text-red-500">*</span></label>
+        <select class="w-full border rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-300" required>
+          <option value="">Pilih tujuan penggunaan data dan informasi</option>
+          <!-- Tambahkan opsi lain -->
+        </select>
+      </div>
+      <div>
+        <label class="block font-semibold mb-1">Pengiriman Data dan Informasi <span class="text-red-500">*</span></label>
+        <select class="w-full border rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-300" required>
+          <option value="">Pilih jenis layanan</option>
+        </select>
+      </div>
+
+      <!-- Bentuk Data -->
+      <div class="md:col-span-2">
+        <label class="block font-semibold mb-1">Bentuk Data dan Informasi <span class="text-red-500">*</span></label>
+        <select class="w-full border rounded-md px-4 py-2 border-red-300 bg-red-50 focus:outline-none focus:ring-2 focus:ring-red-300" required>
+          <option value="">Pilih jenis layanan</option>
+        </select>
+        <p class="text-red-500 text-sm mt-1">⚠️ This field is required.</p>
+      </div>
+
+      <!-- Deskripsi Data -->
+      <div class="md:col-span-2">
+        <label class="block font-semibold mb-1">Data dan Informasi yang Dibutuhkan</label>
+        <textarea rows="4" placeholder="Contoh: Data Harian Curah Hujan Periode Juni - Juli 2023 atau Prakiraan Cuaca Padang - Tuapejat tanggal 20 November 2023" class="w-full border rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-300"></textarea>
+      </div>
+
+      <!-- Tombol Submit -->
+      <div class="md:col-span-2 text-center">
+        <button type="submit" class="bg-blue-700 text-white px-6 py-2 rounded-md hover:bg-blue-800 transition">Kirim Permohonan</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="bg-sky-200 py-12 px-4 md:px-20">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    <!-- Tabel Informasi -->
+    <div>
+      <h2 class="text-2xl md:text-3xl font-bold text-blue-900 mb-4">INFORMASI METEOROLOGI (BERBAYAR)</h2>
+      <p class="text-sm text-gray-700 mb-4">Peraturan Pemerintah No.47 Tahun 2018</p>
+      <div class="overflow-x-auto">
+        <table class="w-full text-left text-sm border border-blue-900">
+          <thead class="bg-blue-800 text-white">
+            <tr>
+              <th class="p-2 border border-blue-900">JENIS PNBP</th>
+              <th class="p-2 border border-blue-900">SATUAN</th>
+              <th class="p-2 border border-blue-900">TARIF</th>
+            </tr>
+          </thead>
+          <tbody class="bg-white text-black">
+            <!-- A. Informasi Meteorologi -->
+            <tr class="bg-blue-100">
+              <td class="p-2 font-bold border border-blue-900" colspan="3">A. Informasi Meteorologi</td>
+            </tr>
+            <tr>
+              <td class="p-2 border border-blue-900">• Informasi cuaca untuk pelayaran</td>
+              <td class="p-2 border border-blue-900">per rute per hari</td>
+              <td class="p-2 border border-blue-900">Rp. 250.000</td>
+            </tr>
+            <tr>
+              <td class="p-2 border border-blue-900">• Informasi cuaca untuk pelabuhan</td>
+              <td class="p-2 border border-blue-900">per rute per hari</td>
+              <td class="p-2 border border-blue-900">Rp. 250.000</td>
+            </tr>
+            <tr>
+              <td class="p-2 border border-blue-900">• Informasi cuaca untuk pengeboran lepas pantai</td>
+              <td class="p-2 border border-blue-900">per rute per hari</td>
+              <td class="p-2 border border-blue-900">Rp. 250.000</td>
+            </tr>
+            <tr>
+              <td class="p-2 border border-blue-900">• Informasi meteorologi untuk keperluan asuransi</td>
+              <td class="p-2 border border-blue-900">per rute per hari</td>
+              <td class="p-2 border border-blue-900">Rp. 250.000</td>
+            </tr>
+
+            <!-- B. Informasi Khusus -->
+            <tr class="bg-blue-100">
+              <td class="p-2 font-bold border border-blue-900" colspan="3">B. Informasi Khusus Meteorologi Sesuai Permintaan</td>
+            </tr>
+            <tr>
+              <td class="p-2 border border-blue-900">• Informasi Cuaca Khusus untuk Kegiatan Olahraga</td>
+              <td class="p-2 border border-blue-900">per rute per hari</td>
+              <td class="p-2 border border-blue-900">Rp. 250.000</td>
+            </tr>
+            <tr>
+              <td class="p-2 border border-blue-900">• Informasi Cuaca Khusus untuk Komersial</td>
+              <td class="p-2 border border-blue-900">per rute per hari</td>
+              <td class="p-2 border border-blue-900">Rp. 250.000</td>
+            </tr>
+            <tr>
+              <td class="p-2 border border-blue-900">• Peta Spasial Informasi Iklim Maritim</td>
+              <td class="p-2 border border-blue-900">per rute per hari</td>
+              <td class="p-2 border border-blue-900">Rp. 250.000</td>
+            </tr>
+            <tr>
+              <td class="p-2 border border-blue-900">• Informasi Tabular dan Grafik Iklim Maritim</td>
+              <td class="p-2 border border-blue-900">per rute per hari</td>
+              <td class="p-2 border border-blue-900">Rp. 250.000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Ilustrasi dan Persyaratan -->
+    <div class="flex flex-col items-center justify-center">
+      <img src="img/claim form2.png" alt="Claim Form" class="w-80 mb-8">
+      <div class="bg-white shadow-md rounded-lg p-6 w-full">
+        <h3 class="text-lg font-bold text-blue-900 mb-2">PERSYARATAN</h3>
+        <p class="text-gray-700 text-sm mb-1">Layanan Data dan Informasi Cuaca Maritim</p>
+        <ul class="list-disc list-inside text-sm text-gray-800">
+          <li>Salinan identitas</li>
+          <li>Surat Permohonan Data atau Surat Pengantar dari Perusahaan/Instansi</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-column">
+      <h4>Kontak</h4>
+      <p><img src="icons/phone-call.png" class="icon" alt="Telepon" /> <strong>Telepon:</strong> (0751) 62331</p>
+      <p><img src="icons/whatsapp.png" class="icon" alt="WhatsApp" /> <strong>Whatsapp:</strong> 08116601044</p>
+      <p><img src="icons/gmail.png" class="icon" alt="Email" /> <strong>Email:</strong> 
+        <a href="mailto:stamar.forecast@gmail.com">stamar.forecast@gmail.com</a>
+      </p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Jam Pelayanan</h4>
+      <p>Senin - Jumat: 08.00 - 16.00</p>
+      <p>Sabtu - Minggu: Tutup</p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Aplikasi & Pranala</h4>
+      <ul>
+        <li><img src="icons/file.png" class="icon" alt="App" /> <a href="#">Unduh Aplikasi</a></li>
+        <li><img src="icons/gmail.png" class="icon" alt="Email" /> <a href="#">Email Resmi</a></li>
+        <li><img src="icons/internet.png" class="icon" alt="Website" /> <a href="#">Website BMKG</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4><img src="icons/placeholder.png" class="icon" alt="Lokasi" /> Lokasi Kami</h4>
+      <img class="map-image" src="img/map.PNG" alt="Map of Padang, West Sumatra" />
+      <p>Stasiun Meteorologi Maritim<br>Teluk Bayur, Padang, Sumatera Barat</p>
+    </div>
+  </div>
+
+  <!-- Ikon Sosial Media -->
+  <div class="footer-social">
+    <a href="https://wa.me/08116601044" target="_blank" title="Whatsapp">
+      <img src="icons/whatsapp.png" alt="WA" />
+    </a>
+    <a href="https://instagram.com/nama_ig_anda" target="_blank" title="Instagram">
+      <img src="icons/instagram (1).png" alt="Instagram" />
+    </a>
+    <a href="https://youtube.com/@channel_anda" target="_blank" title="YouTube">
+      <img src="icons/youtube.png" alt="YouTube" />
+    </a>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 BMKG Maritim Teluk Bayur. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
+
+

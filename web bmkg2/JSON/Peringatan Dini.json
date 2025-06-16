@@ -1,0 +1,19 @@
+{
+  "region": "Sumatera Barat",
+  "synoptic": "Angin secara umum bergerak dari  Tenggara - Selatan dengan kecepatan 3-20 knot.\nKondisi cuaca diprakirakan Berawan hingga potensi Hujan Ringan",
+  "valid_from": "2025-04-12T19:00",
+  "valid_until": "2025-04-14T12:00",
+  "time_zone": "WIB",
+  "warning": {
+    "sedang": [
+      "Perairan Pesisir Selatan",
+      "Perairan Timur Siberut"
+    ],
+    "tinggi": [
+      "Perairan Barat Pagai",
+      "Perairan Timur Pagai"
+    ],
+    "sangat_tinggi": [],
+    "ekstrem": []
+  }
+}

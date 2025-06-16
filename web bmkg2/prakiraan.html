@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<lang="id">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+  
+    <link rel="stylesheet" href="style.css" />
+    <title>BMKG Maritim Teluk Bayur</title>
+  </head>
+  
+    <header class="header">
+  <div class="header-content">
+    <img class="logo" src="img/logo bmkg.jpg" alt="Logo BMKG Maritim Teluk Bayur" />
+    <h1 class="site-title">BMKG Maritim Teluk Bayur</h1>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="beranda.html" class="nav-link">Beranda</a></li>
+        <li><a href="prakiraan.html" class="nav-link">Prakiraan</a></li>
+        <li><a href="layanan.html" class="nav-link">Layanan</a></li>
+        <li><a href="arsipprakiraan.html" class="nav-link">Arsip Prakiraan</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+        <section class="hero">
+  <img class="hero-image" src="img/bg ombak.jpg" alt="Hero background" />
+  <div class="hero-content">
+    <h2 class="hero-title">PRAKIRAAN CUACA MARITIM</h2>
+    <h3 class="hero-subtitle">PROVINSI SUMATERA BARAT</h3>
+    <div class="hero-buttons">
+      <button class="hero-button">📢DOKUMEN PERINGATAN DINI</button>
+      <button class="hero-button">🌊PROSPEK GELOMBANG MINGGUAN</button>
+      <button class="hero-button">🚢DOKUMEN RUTE PELAYARAN</button>
+    </div>
+    <button class="hero-button wide">🗂️ARSIP PRAKIRAAN CUACA MARITIM YANG LALU</button>
+  </div>
+</section>
+
+
+<!-- ⬇️ Tambahkan bagian alert-box di sini -->
+<div class="alert-box">
+  <button class="nav-arrow arrow-left">&#x276E;</button>
+
+  <div class="alert-icon">&#9888;</div>
+
+  <div class="alert-content">
+    <div class="alert-title">Peringatan Dini Cuaca Sumatera Barat</div>
+    <div class="alert-description">
+      Beberapa wilayah berpotensi terjadi hujan dengan intensitas sedang hingga lebat, disertai angin kencang,
+      berlaku dari 12 April 2025 pukul 19.00 WIB hingga 14 April 2025 pukul 12.00 WIB.
+      <a href="#" class="alert-link">Selengkapnya →</a>
+    </div>
+  </div>
+
+  <button class="nav-arrow arrow-right">&#x276F;</button>
+</div>
+<!-- ⬆️ Akhir bagian peringatan -->
+
+<section class="forecast-section">
+  <div class="forecast-container">
+    <img src="img/p1.jpg" alt="Forecast 1" />
+    <img src="img/p2.jpg" alt="Forecast 2" />
+    <img src="img/p3.jpg" alt="Forecast 3" />
+    <img src="img/p4.png" alt="Forecast 4" />
+    <img src="img/p4.png" alt="Forecast 5" />
+  </div>
+</section>
+
+       
+
+ <section>
+    <h2>Prakiraan Wilayah Perairan</h2>
+    <div class="card-container" id="perairan"></div>
+  </section>
+
+  <section>
+    <h2>Prakiraan Cuaca Pelabuhan</h2>
+    <div class="card-container" id="pelabuhan"></div>
+  </section>
+
+<section>
+    <h2>Prakiraan Rute Pelayaran</h2>
+    <div class="card-container" id="pelayaran"></div>
+</section>
+<section style="background-color: #f2f8fc; padding: 50px 0; text-align: center;">
+  <div class="container">
+    <h2 style="font-size: 32px; font-weight: 700; margin: 0;">Rute Pelayaran</h2>
+    <p style="color: #555; margin-bottom: 30px;">Informasi cuaca laut dan rute pelayaran di wilayah Indonesia</p>
+    <a href="detail.html" class="search-link">
+      <span class="search-icon">&#128269;</span> <!-- Unicode untuk ikon kaca pembesar -->
+      lihat rute pelayaran...
+      <span class="dropdown-icon">&#9662;</span> <!-- Unicode untuk panah bawah -->
+    </a>
+  </div>
+</section>
+
+<style>
+  .search-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: #555;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+
+  .search-link:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    color: #000;
+  }
+
+  .search-icon {
+    margin-right: 10px;
+    font-size: 18px;
+  }
+
+  .dropdown-icon {
+    margin-left: auto;
+    font-size: 14px;
+  }
+
+  @media (max-width: 600px) {
+    .search-link {
+      width: 90%;
+      font-size: 14px;
+    }
+  }
+</style>
+  <script>
+    const sources = {
+      perairan: [
+        'JSON/Prakiraan Wilayah Perairan-1.json',
+        'JSON/Prakiraan Wilayah Perairan-2.json',
+        'JSON/Prakiraan Wilayah Perairan-3.json',
+      ],
+      pelabuhan: [
+        'JSON/Prakiraan Cuaca Pelabuhan-1.json',
+        'JSON/Prakiraan Cuaca Pelabuhan-2.json',
+        'JSON/Prakiraan Cuaca Pelabuhan-3.json',
+      ],
+      pelayaran: [
+        'JSON/Prakiraan Cuaca Pelayaran.json'
+      ]
+    };
+
+    function createCard(item, wilayah) {
+      return `
+        <div class="forecast-card">
+          <div class="card-header">
+            <div class="card-time">${new Date(item.time || item.issued).toLocaleString('id-ID')}</div>
+            <div class="card-weather">${item.weather ? (item.weather.includes('Hujan') ? '🌧️' : '⛅') + ' ' + item.weather : '❓'}</div>
+          </div>
+          <div class="card-detail">
+            <div><strong>Wilayah:</strong> ${wilayah}</div>
+            <div><strong>🌬️ Angin:</strong> ${item.wind_from || '-'} - ${item.wind_speed || '-'} m/s</div>
+            <div><strong>🌊 Gelombang:</strong> ${item.wave_cat || '-'} (${item.wave_height || '-'} m)</div>
+            <div><strong>🌡️ Suhu:</strong> ${item.temp_avg || '-'}°C</div>
+            <div><strong>💧 Kelembaban:</strong> ${item.rh_avg || '-'}%</div>
+            <div><strong>🏄 Arus:</strong> ${item.current_to || '-'} - ${item.current_speed || '-'} cm/s</div>
+          </div>
+        </div>
+      `;
+    }
+
+    async function loadCards(type, elementId) {
+      for (const path of sources[type]) {
+        try {
+          const res = await fetch(path);
+          const json = await res.json();
+          const container = document.getElementById(elementId);
+          const forecast = json.forecast_day1 || json.data || [];
+          forecast.slice(0, 3).forEach((item) => {
+            container.innerHTML += createCard(item, json.name || json.lokasi || json.code || 'Tanpa Nama');
+          });
+        } catch (err) {
+          console.error(`Gagal memuat ${path}:`, err);
+        }
+      }
+    }
+
+    loadCards('perairan', 'perairan');
+    loadCards('pelabuhan', 'pelabuhan');
+    loadCards('pelayaran', 'pelayaran');
+  </script>
+  
+<style>
+.header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.forecast-card {
+  width: 260px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
+  padding: 20px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.forecast-card:hover {
+  transform: scale(1.02);
+}
+
+.card-header {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.card-time {
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: #2d3748;
+}
+
+.card-weather {
+  font-size: 1.1rem;
+  margin-top: 4px;
+}
+
+.card-detail {
+  font-size: 0.9rem;
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+.badge {
+  background-color: #c6f6d5;
+  color: #22543d;
+  padding: 2px 8px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+}
+
+section {
+  margin-top: 40px;
+}
+
+h2 {
+  font-size: 1.4rem;
+  color: #1a202c;
+  margin-bottom: 1rem;
+  border-left: 5px solid #4299e1;
+  padding-left: 10px;
+}
+
+</style>
+
+      <footer class="footer">
+  <div class="footer-content">
+    <div class="footer-column">
+      <h4>Kontak</h4>
+      <p><img src="icons/phone-call.png" class="icon" alt="Telepon" /> <strong>Telepon:</strong> (0751) 62331</p>
+      <p><img src="icons/whatsapp.png" class="icon" alt="WhatsApp" /> <strong>Whatsapp:</strong> 08116601044</p>
+      <p><img src="icons/gmail.png" class="icon" alt="Email" /> <strong>Email:</strong> 
+        <a href="mailto:stamar.forecast@gmail.com">stamar.forecast@gmail.com</a>
+      </p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Jam Pelayanan</h4>
+      <p>Senin - Jumat: 08.00 - 16.00</p>
+      <p>Sabtu - Minggu: Tutup</p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Aplikasi & Pranala</h4>
+      <ul>
+        <li><img src="icons/file.png" class="icon" alt="App" /> <a href="#">Unduh Aplikasi</a></li>
+        <li><img src="icons/gmail.png" class="icon" alt="Email" /> <a href="#">Email Resmi</a></li>
+        <li><img src="icons/internet.png" class="icon" alt="Website" /> <a href="#">Website BMKG</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4><img src="icons/placeholder.png" class="icon" alt="Lokasi" /> Lokasi Kami</h4>
+      <img class="map-image" src="img/map.PNG" alt="Map of Padang, West Sumatra" />
+      <p>Stasiun Meteorologi Maritim<br>Teluk Bayur, Padang, Sumatera Barat</p>
+    </div>
+  </div>
+
+  <!-- Ikon Sosial Media -->
+  <div class="footer-social">
+    <a href="https://wa.me/08116601044" target="_blank" title="Whatsapp">
+      <img src="icons/whatsapp.png" alt="WA" />
+    </a>
+    <a href="https://instagram.com/nama_ig_anda" target="_blank" title="Instagram">
+      <img src="icons/instagram (1).png" alt="Instagram" />
+    </a>
+    <a href="https://youtube.com/@channel_anda" target="_blank" title="YouTube">
+      <img src="icons/youtube.png" alt="YouTube" />
+    </a>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 BMKG Maritim Teluk Bayur. All rights reserved.</p>
+  </div>
+</footer>
+
+  </body>
+</html>

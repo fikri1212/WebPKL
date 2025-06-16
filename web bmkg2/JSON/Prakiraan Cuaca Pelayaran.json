@@ -1,0 +1,1208 @@
+{
+  "routes": [
+    {
+      "route_name": "Mentawai Fast / Padang - Tuapejat",
+      "route_forecast": {
+        "coordinates": [
+          {
+            "lat": -0.963938,
+            "lng": 100.351172,
+            "distance_from_start": 0,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 9,
+              "wave_height": 0.66,
+              "wind_speed": 2,
+              "wind_from": "Selatan",
+              "wind_gust": 5,
+              "current_speed": 4.58,
+              "current_to": "Utara"
+            }
+          },
+          {
+            "lat": -1.0748104668935128,
+            "lng": 100.3529506666179,
+            "distance_from_start": 7.3557931644741545,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 18,
+              "wave_height": 0.26,
+              "wind_speed": 2,
+              "wind_from": "Timur",
+              "wind_gust": 6,
+              "current_speed": 3.55,
+              "current_to": "Utara"
+            }
+          },
+          {
+            "lat": -1.1704466885775873,
+            "lng": 100.27635139090401,
+            "distance_from_start": 14.711586328948309,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 23,
+              "wave_height": 0.99,
+              "wind_speed": 4,
+              "wind_from": "Timur",
+              "wind_gust": 8,
+              "current_speed": 7.08,
+              "current_to": "Utara"
+            }
+          },
+          {
+            "lat": -1.2660829102616615,
+            "lng": 100.19975211519012,
+            "distance_from_start": 22.067379493422465,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 21,
+              "wave_height": 1.06,
+              "wind_speed": 4,
+              "wind_from": "Tenggara",
+              "wind_gust": 8,
+              "current_speed": 9.1,
+              "current_to": "Utara"
+            }
+          },
+          {
+            "lat": -1.361719131945736,
+            "lng": 100.12315283947625,
+            "distance_from_start": 29.423172657896618,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 24,
+              "wave_height": 1.09,
+              "wind_speed": 5,
+              "wind_from": "Tenggara",
+              "wind_gust": 8,
+              "current_speed": 8.59,
+              "current_to": "Barat Laut"
+            }
+          },
+          {
+            "lat": -1.4573553536298103,
+            "lng": 100.04655356376236,
+            "distance_from_start": 36.77896582237078,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 22,
+              "wave_height": 1.13,
+              "wind_speed": 6,
+              "wind_from": "Tenggara",
+              "wind_gust": 9,
+              "current_speed": 7.31,
+              "current_to": "Barat Laut"
+            }
+          },
+          {
+            "lat": -1.5529915753138845,
+            "lng": 99.96995428804847,
+            "distance_from_start": 44.13475898684493,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 19,
+              "wave_height": 1.1,
+              "wind_speed": 6,
+              "wind_from": "Tenggara",
+              "wind_gust": 9,
+              "current_speed": 5.82,
+              "current_to": "Utara"
+            }
+          },
+          {
+            "lat": -1.648627796997959,
+            "lng": 99.8933550123346,
+            "distance_from_start": 51.490552151319086,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 23,
+              "wave_height": 1,
+              "wind_speed": 6,
+              "wind_from": "Selatan",
+              "wind_gust": 9,
+              "current_speed": 8.96,
+              "current_to": "Timur Laut"
+            }
+          },
+          {
+            "lat": -1.7442640186820333,
+            "lng": 99.8167557366207,
+            "distance_from_start": 58.846345315793236,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 25,
+              "wave_height": 0.91,
+              "wind_speed": 4,
+              "wind_from": "Selatan",
+              "wind_gust": 7,
+              "current_speed": 8.35,
+              "current_to": "Timur"
+            }
+          },
+          {
+            "lat": -1.8399002403661076,
+            "lng": 99.74015646090682,
+            "distance_from_start": 66.2021384802674,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 28,
+              "wave_height": 0.78,
+              "wind_speed": 5,
+              "wind_from": "Selatan",
+              "wind_gust": 8,
+              "current_speed": 8.57,
+              "current_to": "Tenggara"
+            }
+          },
+          {
+            "lat": -1.9353251763659094,
+            "lng": 99.66329261357149,
+            "distance_from_start": 73.55793164474156,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 29,
+              "wave_height": 0.53,
+              "wind_speed": 4,
+              "wind_from": "Selatan",
+              "wind_gust": 8,
+              "current_speed": 11.65,
+              "current_to": "Tenggara"
+            }
+          },
+          {
+            "lat": -2.03082,
+            "lng": 99.592935,
+            "distance_from_start": 80.9137248092157,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 27,
+              "wave_height": 0.77,
+              "wind_speed": 2,
+              "wind_from": "Selatan",
+              "wind_gust": 6,
+              "current_speed": 4.44,
+              "current_to": "Timur Laut"
+            }
+          }
+        ],
+        "departure_time": "2025-05-09T07:00",
+        "arrival_time": "2025-05-09T10:30",
+        "timezone": "Asia/Jakarta",
+        "speed": 23,
+        "distance": "80.91"
+      },
+      "port_forecast": {
+        "origin": {
+          "name": "Pelabuhan Muaro Padang",
+          "province": "Sumatera Barat",
+          "weather": {
+            "wind_speed": 2,
+            "wind_gust": 5,
+            "wind_from": "Selatan",
+            "current_speed": 4.58,
+            "current_to": "Utara",
+            "wave_height": 0.66,
+            "weather": "Berawan Tebal",
+            "temp_avg": 25.51,
+            "rh_avg": 84.54,
+            "visibility": 9
+          }
+        },
+        "destination": {
+          "name": "Pelabuhan Tuapejat Sipora",
+          "province": "Sumatera Barat",
+          "weather": {
+            "wind_speed": 2,
+            "wind_gust": 6,
+            "wind_from": "Selatan",
+            "current_speed": 4.44,
+            "current_to": "Timur Laut",
+            "wave_height": 0.77,
+            "weather": "Berawan Tebal",
+            "temp_avg": 27.13,
+            "rh_avg": 81.67,
+            "visibility": 27
+          }
+        }
+      }
+    },
+    {
+      "route_name": "Mentawai Fast / Padang - Sikakap",
+      "route_forecast": {
+        "coordinates": [
+          {
+            "lat": -0.96331,
+            "lng": 100.351424,
+            "distance_from_start": 0,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 9,
+              "wave_height": 0.66,
+              "wind_speed": 2,
+              "wind_from": "Selatan",
+              "wind_gust": 5,
+              "current_speed": 4.58,
+              "current_to": "Utara"
+            }
+          },
+          {
+            "lat": -1.040845364532268,
+            "lng": 100.35285223659479,
+            "distance_from_start": 5.315491320112015,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 14,
+              "wave_height": 0.32,
+              "wind_speed": 3,
+              "wind_from": "Timur",
+              "wind_gust": 6,
+              "current_speed": 3.98,
+              "current_to": "Utara"
+            }
+          },
+          {
+            "lat": -1.1205500394433905,
+            "lng": 100.32488211437996,
+            "distance_from_start": 10.63098264022403,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 21,
+              "wave_height": 0.44,
+              "wind_speed": 4,
+              "wind_from": "Timur",
+              "wind_gust": 8,
+              "current_speed": 5.08,
+              "current_to": "Timur Laut"
+            }
+          },
+          {
+            "lat": -1.206509715351374,
+            "lng": 100.3098611563737,
+            "distance_from_start": 15.946473960336045,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 23,
+              "wave_height": 0.96,
+              "wind_speed": 4,
+              "wind_from": "Timur",
+              "wind_gust": 8,
+              "current_speed": 11.77,
+              "current_to": "Utara"
+            }
+          },
+          {
+            "lat": -1.294990339101192,
+            "lng": 100.30685068163035,
+            "distance_from_start": 21.26196528044806,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 15,
+              "wave_height": 1.07,
+              "wind_speed": 5,
+              "wind_from": "Timur",
+              "wind_gust": 8,
+              "current_speed": 8.92,
+              "current_to": "Barat Laut"
+            }
+          },
+          {
+            "lat": -1.3834709628510105,
+            "lng": 100.30384020688702,
+            "distance_from_start": 26.577456600560073,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 13,
+              "wave_height": 1.1,
+              "wind_speed": 4,
+              "wind_from": "Tenggara",
+              "wind_gust": 9,
+              "current_speed": 8.17,
+              "current_to": "Barat Laut"
+            }
+          },
+          {
+            "lat": -1.4719515866008286,
+            "lng": 100.30082973214368,
+            "distance_from_start": 31.89294792067209,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 19,
+              "wave_height": 1.11,
+              "wind_speed": 5,
+              "wind_from": "Selatan",
+              "wind_gust": 8,
+              "current_speed": 16.55,
+              "current_to": "Barat Laut"
+            }
+          },
+          {
+            "lat": -1.5604322103506467,
+            "lng": 100.29781925740035,
+            "distance_from_start": 37.2084392407841,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 22,
+              "wave_height": 1.1,
+              "wind_speed": 5,
+              "wind_from": "Selatan",
+              "wind_gust": 9,
+              "current_speed": 16.18,
+              "current_to": "Barat"
+            }
+          },
+          {
+            "lat": -1.6489120571756253,
+            "lng": 100.29478493770121,
+            "distance_from_start": 42.52393056089612,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 22,
+              "wave_height": 1.09,
+              "wind_speed": 5,
+              "wind_from": "Selatan",
+              "wind_gust": 8,
+              "current_speed": 7.75,
+              "current_to": "Barat"
+            }
+          },
+          {
+            "lat": -1.7373917310041807,
+            "lng": 100.29174530848967,
+            "distance_from_start": 47.839421881008136,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 22,
+              "wave_height": 1.07,
+              "wind_speed": 4,
+              "wind_from": "Selatan",
+              "wind_gust": 7,
+              "current_speed": 2.52,
+              "current_to": "Utara"
+            }
+          },
+          {
+            "lat": -1.825871404832736,
+            "lng": 100.28870567927814,
+            "distance_from_start": 53.154913201120145,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 21,
+              "wave_height": 1.05,
+              "wind_speed": 4,
+              "wind_from": "Selatan",
+              "wind_gust": 7,
+              "current_speed": 5.93,
+              "current_to": "Timur Laut"
+            }
+          },
+          {
+            "lat": -1.9143510786612914,
+            "lng": 100.28566605006661,
+            "distance_from_start": 58.47040452123216,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 25,
+              "wave_height": 1.03,
+              "wind_speed": 4,
+              "wind_from": "Barat Daya",
+              "wind_gust": 7,
+              "current_speed": 4.95,
+              "current_to": "Timur"
+            }
+          },
+          {
+            "lat": -2.0028307524898468,
+            "lng": 100.28262642085507,
+            "distance_from_start": 63.78589584134418,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 29,
+              "wave_height": 1.01,
+              "wind_speed": 4,
+              "wind_from": "Barat Daya",
+              "wind_gust": 8,
+              "current_speed": 4.53,
+              "current_to": "Timur"
+            }
+          },
+          {
+            "lat": -2.0913104263184024,
+            "lng": 100.27958679164354,
+            "distance_from_start": 69.10138716145619,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 26,
+              "wave_height": 0.98,
+              "wind_speed": 4,
+              "wind_from": "Selatan",
+              "wind_gust": 7,
+              "current_speed": 4.75,
+              "current_to": "Tenggara"
+            }
+          },
+          {
+            "lat": -2.179790100146958,
+            "lng": 100.27654716243201,
+            "distance_from_start": 74.4168784815682,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 23,
+              "wave_height": 0.96,
+              "wind_speed": 3,
+              "wind_from": "Selatan",
+              "wind_gust": 7,
+              "current_speed": 7.57,
+              "current_to": "Tenggara"
+            }
+          },
+          {
+            "lat": -2.268269773975513,
+            "lng": 100.27350753322047,
+            "distance_from_start": 79.73236980168024,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 24,
+              "wave_height": 0.92,
+              "wind_speed": 4,
+              "wind_from": "Barat Daya",
+              "wind_gust": 7,
+              "current_speed": 9.04,
+              "current_to": "Tenggara"
+            }
+          },
+          {
+            "lat": -2.3567494478040683,
+            "lng": 100.27046790400894,
+            "distance_from_start": 85.04786112179224,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 26,
+              "wave_height": 0.87,
+              "wind_speed": 3,
+              "wind_from": "Barat Daya",
+              "wind_gust": 7,
+              "current_speed": 9,
+              "current_to": "Tenggara"
+            }
+          },
+          {
+            "lat": -2.445229121632624,
+            "lng": 100.26742827479741,
+            "distance_from_start": 90.36335244190424,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 27,
+              "wave_height": 0.82,
+              "wind_speed": 3,
+              "wind_from": "Barat Daya",
+              "wind_gust": 7,
+              "current_speed": 9.53,
+              "current_to": "Tenggara"
+            }
+          },
+          {
+            "lat": -2.5337087954611794,
+            "lng": 100.26438864558587,
+            "distance_from_start": 95.67884376201627,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 27,
+              "wave_height": 0.74,
+              "wind_speed": 3,
+              "wind_from": "Barat Daya",
+              "wind_gust": 7,
+              "current_speed": 9.87,
+              "current_to": "Timur"
+            }
+          },
+          {
+            "lat": -2.622188469289735,
+            "lng": 100.26134901637434,
+            "distance_from_start": 100.99433508212829,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 23,
+              "wave_height": 0.64,
+              "wind_speed": 3,
+              "wind_from": "Barat Daya",
+              "wind_gust": 6,
+              "current_speed": 9.41,
+              "current_to": "Timur"
+            }
+          },
+          {
+            "lat": -2.71066814311829,
+            "lng": 100.25830938716281,
+            "distance_from_start": 106.30982640224029,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 21,
+              "wave_height": 0.47,
+              "wind_speed": 3,
+              "wind_from": "Barat Daya",
+              "wind_gust": 7,
+              "current_speed": 6.01,
+              "current_to": "Timur"
+            }
+          },
+          {
+            "lat": -2.777518,
+            "lng": 100.215869,
+            "distance_from_start": 111.62531772235232,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 28,
+              "wave_height": 0.6,
+              "wind_speed": 3,
+              "wind_from": "Barat Daya",
+              "wind_gust": 6,
+              "current_speed": 2.93,
+              "current_to": "Timur"
+            }
+          }
+        ],
+        "departure_time": "2025-05-09T07:00",
+        "arrival_time": "2025-05-09T12:00",
+        "timezone": "Asia/Jakarta",
+        "speed": 22,
+        "distance": "111.63"
+      },
+      "port_forecast": {
+        "origin": {
+          "name": "Pelabuhan Muaro Padang",
+          "province": "Sumatera Barat",
+          "weather": {
+            "wind_speed": 2,
+            "wind_gust": 5,
+            "wind_from": "Selatan",
+            "current_speed": 4.58,
+            "current_to": "Utara",
+            "wave_height": 0.66,
+            "weather": "Berawan Tebal",
+            "temp_avg": 25.5,
+            "rh_avg": 84.54,
+            "visibility": 9
+          }
+        },
+        "destination": {
+          "name": "Pelabuhan Sikakap Pagai Utara",
+          "province": "Sumatera Barat",
+          "weather": {
+            "wind_speed": 3,
+            "wind_gust": 6,
+            "wind_from": "Barat Daya",
+            "current_speed": 2.93,
+            "current_to": "Timur",
+            "wave_height": 0.6,
+            "weather": "Berawan Tebal",
+            "temp_avg": 29.21,
+            "rh_avg": 74.14,
+            "visibility": 28
+          }
+        }
+      }
+    },
+    {
+      "route_name": "Mentawai Fast / Sikakap - Padang",
+      "route_forecast": {
+        "coordinates": [
+          {
+            "lat": -2.777518,
+            "lng": 100.215869,
+            "distance_from_start": 0,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 32,
+              "wave_height": 0.58,
+              "wind_speed": 2,
+              "wind_from": "Barat Daya",
+              "wind_gust": 5,
+              "current_speed": 3.36,
+              "current_to": "Timur"
+            }
+          },
+          {
+            "lat": -2.7106681431182906,
+            "lng": 100.25830938716281,
+            "distance_from_start": 5.315491320112014,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 21,
+              "wave_height": 0.43,
+              "wind_speed": 3,
+              "wind_from": "Barat Daya",
+              "wind_gust": 6,
+              "current_speed": 8.25,
+              "current_to": "Timur"
+            }
+          },
+          {
+            "lat": -2.622188469289735,
+            "lng": 100.26134901637434,
+            "distance_from_start": 10.630982640224028,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 23,
+              "wave_height": 0.6,
+              "wind_speed": 3,
+              "wind_from": "Barat",
+              "wind_gust": 6,
+              "current_speed": 11.65,
+              "current_to": "Timur"
+            }
+          },
+          {
+            "lat": -2.5337087954611794,
+            "lng": 100.26438864558587,
+            "distance_from_start": 15.946473960336041,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 29,
+              "wave_height": 0.71,
+              "wind_speed": 2,
+              "wind_from": "Barat",
+              "wind_gust": 6,
+              "current_speed": 8.68,
+              "current_to": "Tenggara"
+            }
+          },
+          {
+            "lat": -2.4452291216326243,
+            "lng": 100.26742827479741,
+            "distance_from_start": 21.261965280448056,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 29,
+              "wave_height": 0.79,
+              "wind_speed": 2,
+              "wind_from": "Barat",
+              "wind_gust": 6,
+              "current_speed": 9.04,
+              "current_to": "Tenggara"
+            }
+          },
+          {
+            "lat": -2.3567494478040687,
+            "lng": 100.27046790400894,
+            "distance_from_start": 26.57745660056007,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 28,
+              "wave_height": 0.86,
+              "wind_speed": 2,
+              "wind_from": "Barat",
+              "wind_gust": 5,
+              "current_speed": 11.06,
+              "current_to": "Selatan"
+            }
+          },
+          {
+            "lat": -2.2682697739755135,
+            "lng": 100.27350753322047,
+            "distance_from_start": 31.892947920672082,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 28,
+              "wave_height": 0.91,
+              "wind_speed": 1,
+              "wind_from": "Barat",
+              "wind_gust": 4,
+              "current_speed": 12.14,
+              "current_to": "Selatan"
+            }
+          },
+          {
+            "lat": -2.179790100146958,
+            "lng": 100.27654716243201,
+            "distance_from_start": 37.208439240784095,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 29,
+              "wave_height": 0.95,
+              "wind_speed": 2,
+              "wind_from": "Barat",
+              "wind_gust": 5,
+              "current_speed": 12.41,
+              "current_to": "Selatan"
+            }
+          },
+          {
+            "lat": -2.091310426318403,
+            "lng": 100.27958679164354,
+            "distance_from_start": 42.52393056089611,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 29,
+              "wave_height": 0.97,
+              "wind_speed": 2,
+              "wind_from": "Barat",
+              "wind_gust": 5,
+              "current_speed": 11.21,
+              "current_to": "Selatan"
+            }
+          },
+          {
+            "lat": -2.002830752489847,
+            "lng": 100.28262642085507,
+            "distance_from_start": 47.83942188100813,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 30,
+              "wave_height": 0.99,
+              "wind_speed": 2,
+              "wind_from": "Barat Laut",
+              "wind_gust": 5,
+              "current_speed": 8.79,
+              "current_to": "Selatan"
+            }
+          },
+          {
+            "lat": -1.9143510786612916,
+            "lng": 100.28566605006661,
+            "distance_from_start": 53.15491320112014,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 23,
+              "wave_height": 1,
+              "wind_speed": 1,
+              "wind_from": "Barat Laut",
+              "wind_gust": 4,
+              "current_speed": 8.21,
+              "current_to": "Barat Daya"
+            }
+          },
+          {
+            "lat": -1.8258714048327362,
+            "lng": 100.28870567927814,
+            "distance_from_start": 58.470404521232155,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 17,
+              "wave_height": 1,
+              "wind_speed": 1,
+              "wind_from": "Utara",
+              "wind_gust": 4,
+              "current_speed": 8.1,
+              "current_to": "Barat Daya"
+            }
+          },
+          {
+            "lat": -1.737391731004181,
+            "lng": 100.29174530848967,
+            "distance_from_start": 63.785895841344164,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 22,
+              "wave_height": 0.98,
+              "wind_speed": 2,
+              "wind_from": "Barat Laut",
+              "wind_gust": 5,
+              "current_speed": 2.6,
+              "current_to": "Barat"
+            }
+          },
+          {
+            "lat": -1.6489120571756255,
+            "lng": 100.29478493770121,
+            "distance_from_start": 69.10138716145617,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 27,
+              "wave_height": 0.97,
+              "wind_speed": 2,
+              "wind_from": "Barat Laut",
+              "wind_gust": 5,
+              "current_speed": 11.22,
+              "current_to": "Barat Laut"
+            }
+          },
+          {
+            "lat": -1.5604322103506472,
+            "lng": 100.29781925740035,
+            "distance_from_start": 74.41687848156819,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 25,
+              "wave_height": 0.96,
+              "wind_speed": 2,
+              "wind_from": "Barat Laut",
+              "wind_gust": 5,
+              "current_speed": 15.44,
+              "current_to": "Barat Laut"
+            }
+          },
+          {
+            "lat": -1.4719515866008288,
+            "lng": 100.30082973214368,
+            "distance_from_start": 79.73236980168022,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 20,
+              "wave_height": 0.94,
+              "wind_speed": 2,
+              "wind_from": "Barat Laut",
+              "wind_gust": 5,
+              "current_speed": 19.07,
+              "current_to": "Barat Laut"
+            }
+          },
+          {
+            "lat": -1.3834709628510107,
+            "lng": 100.30384020688702,
+            "distance_from_start": 85.04786112179222,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 20,
+              "wave_height": 0.92,
+              "wind_speed": 1,
+              "wind_from": "Barat Laut",
+              "wind_gust": 4,
+              "current_speed": 15.62,
+              "current_to": "Utara"
+            }
+          },
+          {
+            "lat": -1.2949903391011928,
+            "lng": 100.30685068163035,
+            "distance_from_start": 90.36335244190423,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 16,
+              "wave_height": 0.9,
+              "wind_speed": 1,
+              "wind_from": "Barat Laut",
+              "wind_gust": 3,
+              "current_speed": 13.76,
+              "current_to": "Utara"
+            }
+          },
+          {
+            "lat": -1.2065097153513744,
+            "lng": 100.3098611563737,
+            "distance_from_start": 95.67884376201626,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 17,
+              "wave_height": 0.83,
+              "wind_speed": 0,
+              "wind_from": "Utara",
+              "wind_gust": 1,
+              "current_speed": 13.61,
+              "current_to": "Utara"
+            }
+          },
+          {
+            "lat": -1.1205500394433907,
+            "lng": 100.32488211437996,
+            "distance_from_start": 100.99433508212826,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 17,
+              "wave_height": 0.31,
+              "wind_speed": 0,
+              "wind_from": "Barat Daya",
+              "wind_gust": 0,
+              "current_speed": 9.45,
+              "current_to": "Utara"
+            }
+          },
+          {
+            "lat": -1.0408453645322682,
+            "lng": 100.35285223659479,
+            "distance_from_start": 106.30982640224028,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 16,
+              "wave_height": 0.21,
+              "wind_speed": 0,
+              "wind_from": "Selatan",
+              "wind_gust": 1,
+              "current_speed": 12.25,
+              "current_to": "Utara"
+            }
+          },
+          {
+            "lat": -0.96331,
+            "lng": 100.351424,
+            "distance_from_start": 111.62531772235229,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 15,
+              "wave_height": 0.56,
+              "wind_speed": 0,
+              "wind_from": "Tenggara",
+              "wind_gust": 1,
+              "current_speed": 13.02,
+              "current_to": "Barat Laut"
+            }
+          }
+        ],
+        "departure_time": "2025-05-09T13:30",
+        "arrival_time": "2025-05-09T18:30",
+        "timezone": "Asia/Jakarta",
+        "speed": 22,
+        "distance": "111.63"
+      },
+      "port_forecast": {
+        "origin": {
+          "name": "Pelabuhan Sikakap Pagai Utara",
+          "province": "Sumatera Barat",
+          "weather": {
+            "wind_speed": 2,
+            "wind_gust": 5,
+            "wind_from": "Barat Daya",
+            "current_speed": 3.36,
+            "current_to": "Timur",
+            "wave_height": 0.58,
+            "weather": "Berawan Tebal",
+            "temp_avg": 29.57,
+            "rh_avg": 72.27,
+            "visibility": 32
+          }
+        },
+        "destination": {
+          "name": "Pelabuhan Muaro Padang",
+          "province": "Sumatera Barat",
+          "weather": {
+            "wind_speed": 0,
+            "wind_gust": 1,
+            "wind_from": "Tenggara",
+            "current_speed": 13.02,
+            "current_to": "Barat Laut",
+            "wave_height": 0.56,
+            "weather": "Berawan Tebal",
+            "temp_avg": 27.05,
+            "rh_avg": 81.42,
+            "visibility": 15
+          }
+        }
+      }
+    },
+    {
+      "route_name": "Mentawai Fast / Tuapejat - Padang",
+      "route_forecast": {
+        "coordinates": [
+          {
+            "lat": -2.03082,
+            "lng": 99.592935,
+            "distance_from_start": 0,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 32,
+              "wave_height": 0.71,
+              "wind_speed": 1,
+              "wind_from": "Barat",
+              "wind_gust": 4,
+              "current_speed": 9.13,
+              "current_to": "Timur Laut"
+            }
+          },
+          {
+            "lat": -1.9353251763659092,
+            "lng": 99.66329261357149,
+            "distance_from_start": 7.3557931644741545,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 30,
+              "wave_height": 0.44,
+              "wind_speed": 1,
+              "wind_from": "Barat Daya",
+              "wind_gust": 4,
+              "current_speed": 6.2,
+              "current_to": "Timur"
+            }
+          },
+          {
+            "lat": -1.8399002403661076,
+            "lng": 99.74015646090682,
+            "distance_from_start": 14.711586328948309,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 29,
+              "wave_height": 0.61,
+              "wind_speed": 1,
+              "wind_from": "Barat",
+              "wind_gust": 3,
+              "current_speed": 6.12,
+              "current_to": "Tenggara"
+            }
+          },
+          {
+            "lat": -1.744264018682033,
+            "lng": 99.8167557366207,
+            "distance_from_start": 22.067379493422465,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 34,
+              "wave_height": 0.77,
+              "wind_speed": 1,
+              "wind_from": "Barat",
+              "wind_gust": 3,
+              "current_speed": 5.6,
+              "current_to": "Tenggara"
+            }
+          },
+          {
+            "lat": -1.6486277969979588,
+            "lng": 99.8933550123346,
+            "distance_from_start": 29.423172657896618,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 32,
+              "wave_height": 0.8,
+              "wind_speed": 2,
+              "wind_from": "Barat Laut",
+              "wind_gust": 5,
+              "current_speed": 2.97,
+              "current_to": "Timur"
+            }
+          },
+          {
+            "lat": -1.5529915753138845,
+            "lng": 99.96995428804847,
+            "distance_from_start": 36.77896582237078,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 30,
+              "wave_height": 0.86,
+              "wind_speed": 2,
+              "wind_from": "Barat Laut",
+              "wind_gust": 6,
+              "current_speed": 2.2,
+              "current_to": "Timur Laut"
+            }
+          },
+          {
+            "lat": -1.45735535362981,
+            "lng": 100.04655356376236,
+            "distance_from_start": 44.13475898684493,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 30,
+              "wave_height": 0.86,
+              "wind_speed": 3,
+              "wind_from": "Barat Laut",
+              "wind_gust": 6,
+              "current_speed": 12.66,
+              "current_to": "Timur Laut"
+            }
+          },
+          {
+            "lat": -1.3617191319457358,
+            "lng": 100.12315283947625,
+            "distance_from_start": 51.490552151319086,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 29,
+              "wave_height": 0.87,
+              "wind_speed": 2,
+              "wind_from": "Barat Laut",
+              "wind_gust": 6,
+              "current_speed": 10.06,
+              "current_to": "Timur Laut"
+            }
+          },
+          {
+            "lat": -1.2660829102616615,
+            "lng": 100.19975211519012,
+            "distance_from_start": 58.846345315793236,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 18,
+              "wave_height": 0.88,
+              "wind_speed": 2,
+              "wind_from": "Utara",
+              "wind_gust": 5,
+              "current_speed": 12.22,
+              "current_to": "Utara"
+            }
+          },
+          {
+            "lat": -1.170446688577587,
+            "lng": 100.27635139090401,
+            "distance_from_start": 66.2021384802674,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 17,
+              "wave_height": 0.84,
+              "wind_speed": 0,
+              "wind_from": "Utara",
+              "wind_gust": 1,
+              "current_speed": 12.37,
+              "current_to": "Utara"
+            }
+          },
+          {
+            "lat": -1.0748104668935126,
+            "lng": 100.3529506666179,
+            "distance_from_start": 73.55793164474156,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 16,
+              "wave_height": 0.15,
+              "wind_speed": 0,
+              "wind_from": "Selatan",
+              "wind_gust": 1,
+              "current_speed": 8.95,
+              "current_to": "Utara"
+            }
+          },
+          {
+            "lat": -0.963938,
+            "lng": 100.351172,
+            "distance_from_start": 80.9137248092157,
+            "weather": {
+              "weather": "Berawan Tebal",
+              "visibility": 15,
+              "wave_height": 0.56,
+              "wind_speed": 0,
+              "wind_from": "Tenggara",
+              "wind_gust": 1,
+              "current_speed": 13.02,
+              "current_to": "Barat Laut"
+            }
+          }
+        ],
+        "departure_time": "2025-05-09T15:00",
+        "arrival_time": "2025-05-09T18:30",
+        "timezone": "Asia/Jakarta",
+        "speed": 23,
+        "distance": "80.91"
+      },
+      "port_forecast": {
+        "origin": {
+          "name": "Pelabuhan Tuapejat Sipora",
+          "province": "Sumatera Barat",
+          "weather": {
+            "wind_speed": 1,
+            "wind_gust": 4,
+            "wind_from": "Barat",
+            "current_speed": 9.13,
+            "current_to": "Timur Laut",
+            "wave_height": 0.71,
+            "weather": "Berawan Tebal",
+            "temp_avg": 28.09,
+            "rh_avg": 78.07,
+            "visibility": 32
+          }
+        },
+        "destination": {
+          "name": "Pelabuhan Muaro Padang",
+          "province": "Sumatera Barat",
+          "weather": {
+            "wind_speed": 0,
+            "wind_gust": 1,
+            "wind_from": "Tenggara",
+            "current_speed": 13.02,
+            "current_to": "Barat Laut",
+            "wave_height": 0.56,
+            "weather": "Berawan Tebal",
+            "temp_avg": 27.06,
+            "rh_avg": 81.38,
+            "visibility": 15
+          }
+        }
+      }
+    }
+  ]
+}

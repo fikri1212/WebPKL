@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Prakiraan Cuaca Sepanjang Rute</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #eef5fb;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: #0077b6;
+      margin-top: 40px;
+      border-bottom: 2px solid #29b6f6;
+      padding-bottom: 5px;
+    }
+
+    .rute-section {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      margin-bottom: 40px;
+    }
+
+    .table-wrapper {
+      overflow-x: auto;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      min-width: 1000px;
+    }
+
+    th, td {
+      border: 1px solid #cfd8dc;
+      padding: 12px 8px;
+      text-align: center;
+      vertical-align: middle;
+      font-size: 14px;
+      white-space: nowrap;
+    }
+
+    th {
+      background-color: #29b6f6;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+
+    .param-label {
+      text-align: left;
+      font-weight: bold;
+      background-color: #f1f8ff;
+      color: #37474f;
+    }
+
+    td span.icon {
+      margin-right: 6px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Prakiraan Cuaca Sepanjang Rute</h1>
+  <div id="content"></div>
+
+  <script>
+    fetch('./JSON/Prakiraan Cuaca Pelayaran.json')
+      .then(res => res.json())
+      .then(data => {
+        const container = document.getElementById('content');
+        data.routes.forEach(route => {
+          const coords = route.route_forecast.coordinates;
+
+          const headers = coords.map((_, i) => `<th>KM ${coords[i].distance_from_start.toFixed(1)}</th>`).join('');
+
+          function getWeatherIcon(desc) {
+            const d = desc.toLowerCase();
+            if (d.includes('hujan')) return '🌧️';
+            if (d.includes('berawan')) return '⛅';
+            if (d.includes('cerah')) return '☀️';
+            return '☁️';
+          }
+
+          function getWindDirIcon(dir) {
+            const d = dir.toLowerCase();
+            if (d.includes('timur')) return '➡️';
+            if (d.includes('barat')) return '⬅️';
+            if (d.includes('utara')) return '⬆️';
+            if (d.includes('selatan')) return '⬇️';
+            if (d.includes('tenggara')) return '↘️';
+            if (d.includes('barat daya')) return '↙️';
+            if (d.includes('timur laut')) return '↗️';
+            if (d.includes('barat laut')) return '↖️';
+            return '🧭';
+          }
+
+          function getCurrentIcon(dir) {
+            return getWindDirIcon(dir);
+          }
+
+          const weatherRow = coords.map(c => `
+            <td><span class="icon">${getWeatherIcon(c.weather.weather)}</span>${c.weather.weather}</td>
+          `).join('');
+
+          const windRow = coords.map(c => `
+            <td><span class="icon">💨</span>${c.weather.wind_speed} kt<br><span class="icon">${getWindDirIcon(c.weather.wind_from)}</span>${c.weather.wind_from}</td>
+          `).join('');
+
+          const gustRow = coords.map(c => `
+            <td><span class="icon">🌬️</span>${c.weather.wind_gust} kt</td>
+          `).join('');
+
+          const waveRow = coords.map(c => `
+            <td><span class="icon">🌊</span>${c.weather.wave_height} m</td>
+          `).join('');
+
+          const currentRow = coords.map(c => `
+            <td><span class="icon">🌀</span>${c.weather.current_speed} kt<br><span class="icon">${getCurrentIcon(c.weather.current_to)}</span>${c.weather.current_to}</td>
+          `).join('');
+
+          const visibilityRow = coords.map(c => `
+            <td><span class="icon">👀</span>${c.weather.visibility} km</td>
+          `).join('');
+
+          container.innerHTML += `
+            <div class="rute-section">
+              <h2>${route.route_name}</h2>
+              <div class="table-wrapper">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Parameter</th>
+                      ${headers}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="param-label">Cuaca</td>
+                      ${weatherRow}
+                    </tr>
+                    <tr>
+                      <td class="param-label">Angin</td>
+                      ${windRow}
+                    </tr>
+                    <tr>
+                      <td class="param-label">Hembusan</td>
+                      ${gustRow}
+                    </tr>
+                    <tr>
+                      <td class="param-label">Gelombang</td>
+                      ${waveRow}
+                    </tr>
+                    <tr>
+                      <td class="param-label">Arus</td>
+                      ${currentRow}
+                    </tr>
+                    <tr>
+                      <td class="param-label">Jarak Pandang</td>
+                      ${visibilityRow}
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          `;
+        });
+      })
+      .catch(err => {
+        document.getElementById('content').innerHTML = `<p style="color:red;">Gagal memuat data: ${err.message}</p>`;
+      });
+  </script>
+</body>
+</html>
